@@ -1,0 +1,125 @@
+site_name: garnet技术笔记
+nav:
+  - Home: index.md
+  - 杂谈:
+      - 快速搭建技术博客: 杂谈/快速搭建技术博客.md
+      - 使用texmacs: 杂谈/使用texmacs.md
+      - windows快捷键: 杂谈/windows_快捷键.md
+      - 硬件_AltiumDesigner使用: 杂谈/硬件_AltiumDesigner使用.md
+      - 批量下载与合并课件: 杂谈/批量下载与合并课件.md
+      - inkscape去矢量图白边: 杂谈/inkscape去矢量图白边.md
+      - windows下everything搜索: 杂谈/windows_everything的使用.md
+      - windows下视频加字幕: 杂谈/windows_视频加字幕.md
+      - pdf编辑: 杂谈/pdf编辑.md
+  - Linux:
+      - bash速查: Linux/bash速查.md
+      - vim速查: Linux/vim速查.md
+      - arch速查: Linux/arch速查.md
+      - git速查: Linux/git速查.md
+      - markdown速查: Linux/markdown速查.md
+      - spack速查: Linux/spack速查.md
+      - wsl速查: Linux/wsl速查.md
+      - terminal_快捷键以及配置: Linux/terminal_快捷键以及配置.md
+      - bashrc: Linux/bashrc.md
+      - vim_使用nvim: Linux/vim_使用nvim.md
+      - vim_使用LunarVim: Linux/vim_使用LunarVim.md
+      - bash命令备忘: Linux/bash命令备忘.md
+      - 安装linux发行版: Linux/安装linux发行版.md
+      - v2rayA配置: Linux/v2raya配置.md
+      - 非管理员权限安装htop: Linux/非管理员权限安装htop.md
+      - vim_强制tab对应4空格: Linux/vim_强制tab对应4空格.md
+      - 集群_mpirun报错: Linux/集群_mpirun报错.md
+      - terminal_显示中文: Linux/linux_terminal显示中文.md
+  - math:
+    - Mathematica速查: math/MathematicaCheatsheet.md
+    - 任意正交曲线坐标系矢量计算: math/任意正交曲线坐标系矢量计算.md
+    - GaussianSI单位制转换: math/GaussianSI单位制转换.md
+    - 琐碎的Mathematica使用: math/琐碎的Mathematica使用.md
+  - FEM:
+    - 科学计算准则与协议: FEM/科学计算准则与协议.md
+    - 有限元空间: FEM/有限元空间.md
+    - 基函数与数值积分: FEM/基函数与数值积分.md
+    - 数据结构_HeXiaoming: FEM/数据结构_HeXiaoming.md
+    - dealii-01_概况: FEM/dealii-01_概况.md
+    - dealii-02_网格: FEM/dealii-02_网格.md
+    - dealii-03_自由度: FEM/dealii-03_自由度.md
+    - dealii-04_泊松方程: FEM/dealii-04_泊松方程.md
+  - python:
+      - pdb: python/pdb.md
+      - pyright: python/pyright.md
+      - matplotlib画streamline: python/matplotlib画streamline.md
+      - python无法支持汉字: python/python无法支持汉字.md
+  - cpp:
+     - GDB速查: cpp/GDB速查.md
+     - 基本概念_基础类型_操作符: cpp/基本概念_基础类型_操作符.md
+     - 基本概念_enum_struct_控制流: cpp/基本概念_enum_struct_控制流.md
+     - 基本概念_指针: cpp/基本概念_指针.md
+     - 基本概念_函数_预处理: cpp/基本概念_函数_预处理.md
+     - 面向对象编程: cpp/OOP.md
+     - 模板元编程: cpp/模板元编程.md
+     - 翻译单元: cpp/翻译单元.md
+     - 编程规范: cpp/编程规范.md
+  - latex:
+    - cheatsheet: latex/cheatsheet.md
+    - 修改参考文献格式: latex/修改参考文献格式.md
+    - 本地与在线overleaf区别: latex/本地与在线overleaf区别.md
+    - 在beamer中插入动画: latex/在beamer中插入动画.md
+    - windows中使用latex: latex/windows_latex.md
+
+     
+
+
+
+markdown_extensions:
+  - attr_list
+  - md_in_html  # https://squidfunk.github.io/mkdocs-material/reference/images/
+  - markdown.extensions.codehilite
+  - markdown.extensions.extra
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - markdown.extensions.tables
+  - toc:
+      permalink: true       # 在每个标题旁添加链接
+      toc_depth: 1-6
+
+plugins:
+  - mkdocs-pdf
+  - search
+
+
+theme:
+  # name: readthedocs
+  name: material
+  custom_dir: overrides
+  palette:
+    primary: 'indigo'       # 主颜色
+    accent: 'pink'          # 强调颜色
+  font:
+    text: 'Roboto'          # 主文字字体
+    code: 'Roboto Mono'     # 代码块字体
+  features:
+    - navigation.indexes    # 对于包含子页面的节，提供更好的索引页面
+    - navigation.instant
+    - navigation.path       # 在文档顶部也显示当前文档的 
+    - navigation.top
+    - navigation.tabs
+    - palette.switcher      # 主题色切换
+    - search.suggest        # 搜索建议
+    - search.highlight      # 搜索关键词高亮
+    - instant.loading       # 启用页面的即时加载
+    - navigation.footer
+
+
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+  # - javascripts/extra.js
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+
+
+
+
