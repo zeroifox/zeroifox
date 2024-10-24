@@ -1,8 +1,8 @@
 site_name: garnet技术笔记
 nav:
   - 喵喵之家: index.md
-  - test: ww.md
-  #    - test: test/test.md
+  - test: test.md
+      - 嗷嗷: test/mm.md
  
 
 
