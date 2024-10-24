@@ -1,8 +1,8 @@
 site_name: garnet技术笔记
 nav:
   - Home: index.md
-  - test:
-      - test: test/test.md
+ # - test:
+  #    - test: test/test.md
  
 
 
