@@ -1,6 +1,6 @@
-site_name: garnet技术笔记
+site_name: 喵喵之家
 nav:
-  - 喵喵之家: index.md
+  - 喵喵们的家: index.md
   - Full f: 
       - 第一章: Full f/第一章.md
       - 第二章: Full f/第二章.md
