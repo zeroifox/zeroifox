@@ -1,9 +1,9 @@
 site_name: 喵喵之家
 nav:
   - 喵喵们的家: index.md
-  - Full f: 
-      - 第一章: Full f/第一章.md
-      - 第二章: Full f/第二章.md
+  - Full_f: 
+      - 第一章: Full_f/第一章.md
+      - 第二章: Full_f/第二章.md
   - PIC:
       - 第一章: PIC/第一章.md
   
